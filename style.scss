@@ -1,0 +1,135 @@
+body {
+  font-family: vazir;
+}
+/***********************************/
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(gif/loader7.gif) center no-repeat #fff;
+}
+/***********************************/
+.menu-icon {
+  color: #8060d0;
+  outline: none;
+}
+.container-fluid {
+  padding: 0;
+}
+.main-pic {
+  z-index: -1;
+  position: sticky;
+  bottom: 0;
+}
+.header-main {
+  color: white;
+  position: fixed;
+  a {
+    color: white !important;
+  }
+  li:hover a {
+    color: #8060d0 !important;
+  }
+  .hvr-underline-from-center:before {
+    background-color: #8060d0;
+    border-radius: 5px;
+    height: 2px;
+  }
+}
+.container-title {
+  background-color: #8060d0;
+  ///min-height: 300px;
+  display: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  color: #fff;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+    //font-size: min($numbers: 1.6rem);
+  }
+  h4 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  /* position the div in center */
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.abouttitle {
+  text-align: center!important;
+  float: none;
+  h2{
+      color: #5680e9;
+  }
+}
+.about-box {
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    .content-con{
+        text-align: center;
+        #strong-title{
+            font-size: 1.5rem;
+            margin: 15px auto!important;
+        }
+        p{
+            margin: 0;
+            text-align: center;
+            i{
+                font-size: 3rem;
+                color: #8060d0;
+            }
+            a{
+                color: #5680e9;
+                text-decoration: none;
+            }
+        }
+        .col{
+            text-align: center!important;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+  .main-pic {
+    width: 280%;
+    z-index: -5;
+  }
+  .header-main {
+    background-color: white;
+    z-index: 6;
+    position: fixed;
+    border-bottom: 0.5px solid #c5c5c5;
+    .navbar-nav {
+      background-color: white;
+      z-index: 6;
+      a {
+        color: #8060d0 !important;
+        z-index: 6;
+      }
+    }
+  }
+  .box-pic-con {
+    overflow-x: hidden;
+  }
+  .container-title {
+    z-index: 2;
+  }
+}
