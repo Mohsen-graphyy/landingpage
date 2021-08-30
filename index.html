@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page MohsenPiri</title>
+    <!-- bootstrap css link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -12,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="hover.css" />
+    <!-- animate.css library link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -19,6 +21,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css scroll animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css link of main project -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -101,7 +106,7 @@
         class="row p-0 justify-content-lg-evenly align-content-center"
         style="margin: 0 auto"
       >
-        <div class="container col-12 col-md-3 about-box p-4 hvr-grow">
+        <div class="container col-12 col-md-3 about-box p-4 "data-aos="zoom-in-up" data-aos-once="ture">
           <div class="row content-con">
             <p class="w-100"><i class="fas fa-globe-asia"></i></p>
             <strong class="w-100" style="margin: 20px auto;" id="strong-title">طراحی سایت</strong>
@@ -111,21 +116,50 @@
             <p class="w-100 about-box-content m-2"><a href="#">بیشتر بخوانید</a></p>
           </div>
         </div>
-        <div class="container col-12 col-md-3 about-box p-4"></div>
-        <div class="container col-12 col-md-3 about-box p-4"></div>
+        <div class="container col-12 col-md-3 about-box p-4 "data-aos="zoom-in-up" data-aos-once="ture">
+          <div class="row content-con">
+            <p class="w-100"><i class="fas fa-users"></i></p>
+            <strong class="w-100" style="margin: 20px auto;" id="strong-title">محسن و محمدحسین</strong>
+            <p class="w-100 about-box-content" style="text-align: justify;">
+                من و محمد حسین از نوجوانی به کار های دیجتالی و گرافیکی علاقه زیادی داشتیم ، محمد حسین دانشجوی مهندسی هوافضا میخونه و من هم مهندسی کامپیوتر ، خلاصه اینجا جای مناسبی برای آشنایی شما با کار ماست
+            </p>
+            <p class="w-100 about-box-content m-2"><a href="#">بیشتر بخوانید</a></p>
+          </div>
+          
+        </div>
+        <div class="container col-12 col-md-3 about-box p-4" data-aos="zoom-in-up" data-aos-once="ture">
+          <div class="row content-con">
+            <p class="w-100"><i class="fas fa-paint-brush"></i></p>
+            <strong class="w-100" style="margin: 20px auto;" id="strong-title">نقاشی دیجیتال</strong>
+            <p class="w-100 about-box-content" style="text-align: justify;">
+                  نقاشی دیجیتال اولین بخش کاری ما در حوزه گرافیک نبود ؛ اما با استفاده از ابزار های جدیدی که به مجموعه اضافه کردیم ، توانستیم آن را به یکی از شاخص ترین خدمات و محصولات خود تبدیل کنیم
+            </p>
+            <p class="w-100 about-box-content m-2"><a href="#">بیشتر بخوانید</a></p>
+          </div>
+        </div>
       </div>
+      <br><br><br><br><br>
     </div>
+    <!-- jquery script link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- bootstarp js query link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <!-- fontawsome script link -->
     <script
       src="https://kit.fontawesome.com/e22089d0ca.js"
       crossorigin="anonymous"
     ></script>
+    <!-- scroll css animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- main query js file -->
     <script src="query.js"></script>
   </body>
 </html>
