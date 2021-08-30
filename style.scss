@@ -1,5 +1,14 @@
-body {
+@font-face {
   font-family: vazir;
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/Vazir-Thin.eot");
+  src: url("fonts/Vazir-Thin.woff") format("woff"),
+    url("fonts/Vazir-Thin.ttf") format("ttf"),
+    url("fonts/Vazir-Thin.woff2") format("woff2");
+}
+body {
+ font-family: vazir;
 }
 /***********************************/
 .no-js #loader {
@@ -37,7 +46,8 @@ body {
   color: white;
   position: fixed;
   a {
-    color: white !important;
+    color: #8060d0 !important;
+    margin-bottom: 5px;
   }
   li:hover a {
     color: #8060d0 !important;
@@ -45,7 +55,7 @@ body {
   .hvr-underline-from-center:before {
     background-color: #8060d0;
     border-radius: 5px;
-    height: 2px;
+    height: 1px;
   }
 }
 .container-title {
@@ -81,6 +91,7 @@ body {
 }
 .about-box {
   //border: 1px solid rgba(0, 0, 0, 0.253);
+  margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.151);
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -109,10 +120,22 @@ body {
     }
   }
 }
-.about-box:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: all 0.5s;
+/***/
+.hvr-bounce-to-left::before{
+  border-radius: 10px!important;
+  background-color: #8060d0;
 }
+.hvr-bounce-to-left:hover i{
+  color: #c1c8e4!important;
+}
+.hvr-bounce-to-left:hover a{
+  color: #84cee8!important;
+}
+/***/
+// .about-box:hover {
+//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+//   transition: all 0.5s;
+// }
 @media screen and (max-width: 768px) {
   .main-pic {
     width: 280%;
