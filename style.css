@@ -55,16 +55,16 @@ body {
 }
 
 .header-main a {
-  color: #fff !important;
+  color: #8060d0 !important;
   margin-bottom: 5px;
 }
 
 .header-main li:hover a {
-  color: #8060d0 !important;
+  color: #fff !important;
 }
 
 .header-main .hvr-underline-from-center:before {
-  background-color: #8060d0;
+  background-color: #fff;
   border-radius: 5px;
   height: 1px;
 }
@@ -167,6 +167,10 @@ body {
 .splide {
   text-align: center;
   margin: 0 10%;
+}
+
+.nemoone {
+  text-align: center;
 }
 
 /***/
